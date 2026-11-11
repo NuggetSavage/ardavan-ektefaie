@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>In Loving Memory of Ardavan Ektefaie</title>
 <meta name="description" content="Memorial Service · Saturday, November 21, 2026 · 12:00 PM · Forest Lawn – Hollywood Hills">
 <meta name="robots" content="noindex, nofollow">
@@ -18,26 +18,72 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Cinzel:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Mrs+Saint+Delafield&family=Cormorant+Garamond:wght@500&family=Markazi+Text:wght@400;500&display=block" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#1a1a1a;font-family:'Cormorant Garamond',Georgia,serif;-webkit-text-size-adjust:100%}
-main{max-width:560px;margin:0 auto;padding:0 0 48px}
-img.invite{display:block;width:100%;height:auto}
-.actions{display:flex;flex-direction:column;gap:12px;padding:28px 24px 0}
-.btn{display:block;text-align:center;text-decoration:none;color:#111;border:1px solid #111;padding:15px 18px;font-family:'Cinzel',Georgia,serif;font-size:15px;letter-spacing:.18em;padding-left:calc(18px + .18em)}
-.btn:active{background:#111;color:#fff}
+html,body{margin:0;height:100%;background:#fff}
+body{overflow:hidden}
+#stage{position:fixed;inset:0;display:flex;align-items:flex-start;justify-content:center}
+#scaler{width:1080px;height:1920px;flex:none;transform-origin:top center;opacity:0;transition:opacity .6s ease}
+#scaler.ready{opacity:1}
+.card{position:relative;width:1080px;height:1920px;overflow:hidden;background:#fff;color:#1a1a1a;font-family:'Cinzel',Georgia,serif;font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1}
+.card a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,.06)}
+.tap{border-bottom:1.5px solid #CFCFCF;padding-bottom:3px}
+.save{position:fixed;left:0;right:0;bottom:max(10px,env(safe-area-inset-bottom));text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:13px;letter-spacing:.18em;padding-left:.18em}
+.save a{color:#8A8A8A;text-decoration:none}
 </style>
 </head>
 <body>
-<main>
-<img class="invite" src="invitation.jpg" width="1080" height="1920" alt="In Loving Memory of Ardavan Ektefaie, January 1985 – October 2026. Memorial Service, Saturday, November 21, 2026, 12:00 PM, Forest Lawn – Hollywood Hills, 6300 Forest Lawn Drive, Los Angeles, CA 90068.">
-<div class="actions">
-<a class="btn" href="https://maps.apple.com/?q=Forest%20Lawn%20%E2%80%93%20Hollywood%20Hills&amp;address=6300%20Forest%20Lawn%20Dr%2C%20Los%20Angeles%2C%20CA%2090068">Directions · Apple Maps</a>
-<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Forest%20Lawn%20Hollywood%20Hills%2C%206300%20Forest%20Lawn%20Drive%2C%20Los%20Angeles%2C%20CA%2090068">Directions · Google Maps</a>
-<a class="btn" href="memorial-service.ics">Add to Calendar</a>
-<a class="btn" href="invitation.jpg" download="Ardavan-Ektefaie-Memorial-Invitation.jpg">Save Invitation</a>
+<div id="stage"><div id="scaler">
+<main class="card">
+
+<div style="position: relative; width: 1080px; height: 1240px; overflow: hidden">
+<img src="photo.jpg" alt="Ardavan Ektefaie" style="display: block; width: 1080px; height: 1350px; object-fit: cover; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 90%); mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 90%)">
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 560px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.04) 10%, rgba(255,255,255,0.14) 20%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.86) 60%, rgba(255,255,255,0.96) 70%, #FFFFFF 80%, #FFFFFF 100%)"></div>
+<p style="position: absolute; left: 0; right: 0; bottom: 168px; margin: 0; font-family: 'Mrs Saint Delafield', cursive; font-size: 132px; line-height: 1; color: #111111; text-align: center">In Loving Memory</p>
 </div>
+
+<div style="position: relative; margin-top: -150px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 70px">
+<h1 style="margin: 18px 0 0; font-weight: 400; font-size: 74px; line-height: 1.1; letter-spacing: 0.1em; padding-left: 0.1em; color: #111111">ARDAVAN EKTEFAIE</h1>
+<p style="margin: 20px 0 0; font-size: 36px; letter-spacing: 0.03em; color: #222222">January 1985 – October 2026</p>
+<p lang="fa" dir="rtl" style="margin: 25px 0 0; font-family: 'Markazi Text', serif; font-size: 46px; line-height: 1.35; color: #222222">روحش شاد و یادش گرامی</p>
+<div id="star" aria-hidden="true" style="margin-top: 31px; display: flex; align-items: center; gap: 14px"><span style="display: block; width: 70px; height: 1px; background: #9A9A9A"></span><svg width="22" height="22" viewBox="0 0 16 16" fill="none" stroke="#6A6A6A" stroke-width="0.8"><rect x="3.5" y="3.5" width="9" height="9"></rect><rect x="3.5" y="3.5" width="9" height="9" transform="rotate(45 8 8)"></rect></svg><span style="display: block; width: 70px; height: 1px; background: #9A9A9A"></span></div>
+<p style="margin: 34px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 500; letter-spacing: 0.35em; padding-left: 0.35em; color: #333333">MEMORIAL SERVICE</p>
+<a href="memorial-service.ics" aria-label="Add the memorial service on Saturday, November 21, 2026 at 12:00 PM to your calendar" style="margin-top: 14px"><span class="tap" style="font-size: 27px; letter-spacing: 0.05em; color: #333333">SATURDAY, NOVEMBER 21, 2026 · 12:00 PM</span></a>
+<a id="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Forest%20Lawn%20Hollywood%20Hills%2C%206300%20Forest%20Lawn%20Drive%2C%20Los%20Angeles%2C%20CA%2090068" aria-label="Get directions to Forest Lawn – Hollywood Hills, 6300 Forest Lawn Drive, Los Angeles, CA 90068" style="margin-top: 58px; display: flex; flex-direction: column; align-items: center">
+<span style="font-size: 40px; letter-spacing: 0.04em; color: #111111">Forest Lawn – Hollywood Hills</span>
+<span class="tap" style="margin-top: 12px; font-size: 25px; letter-spacing: 0.05em; color: #333333">6300 FOREST LAWN DRIVE · LOS ANGELES, CA 90068</span>
+</a>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 64px; display: flex; flex-direction: column; align-items: center; text-align: center">
+<p style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; font-weight: 500; letter-spacing: 0.4em; padding-left: 0.4em; color: #333333">FOREVER IN OUR HEARTS</p>
+<svg aria-hidden="true" width="240" height="14" viewBox="0 0 420 22" style="margin-top: 8px" fill="none" stroke="#555555" stroke-width="1.6"><line x1="0" y1="11" x2="176" y2="11"></line><path d="M210 11 C204 4 192 4 192 11 C192 18 204 18 210 11 C216 4 228 4 228 11 C228 18 216 18 210 11 Z"></path><line x1="244" y1="11" x2="420" y2="11"></line></svg>
+<p lang="fa" dir="rtl" style="margin: 5px 0 0; font-family: 'Markazi Text', serif; font-size: 28px; line-height: 1.35; color: #222222">همیشه در قلب ما <svg role="img" aria-label="heart" width="20" height="20" viewBox="0 0 24 24" style="display: inline-block; vertical-align: -3px; margin-right: 5px"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.2 1.8-2 3.3-3.2 5.4-3.2 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21z" fill="#C8102E"></path></svg></p>
+</div>
+
 </main>
+</div></div>
+<div class="save"><a href="invitation.jpg" download="Ardavan-Ektefaie-Memorial-Invitation.jpg">SAVE INVITATION</a></div>
+<script>
+(function(){
+  var s=document.getElementById('scaler');
+  var card=s.querySelector('.card');
+  function fit(){
+    var save=28, w=window.innerWidth, h=window.innerHeight-save;
+    var H=Math.max(1920, Math.min(2340, 1080*h/w));
+    card.style.height=H+'px'; s.style.height=H+'px';
+    var k=Math.min(w/1080,h/H);
+    var x=H-1920; document.getElementById('star').style.marginTop=(31+x*0.22)+'px'; document.getElementById('maps').style.marginTop=(58+x*0.26)+'px';
+    s.style.transform='scale('+k+')';
+  }
+  fit(); window.addEventListener('resize',fit);
+  if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+    document.getElementById('maps').href='https://maps.apple.com/?q=Forest%20Lawn%20%E2%80%93%20Hollywood%20Hills&address=6300%20Forest%20Lawn%20Dr%2C%20Los%20Angeles%2C%20CA%2090068';
+  }
+  var shown=false; function show(){ if(!shown){shown=true; s.classList.add('ready');} }
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(show);}
+  setTimeout(show,2500);
+})();
+</script>
 </body>
 </html>
