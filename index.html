@@ -44,7 +44,7 @@ body{overflow:hidden}
   }
   fit(); window.addEventListener('resize',fit);
   if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-    document.getElementById('maps').href='https://maps.apple.com/?q=Old%20North%20Church&ll=34.1456,-118.3177&address=6300%20Forest%20Lawn%20Dr%2C%20Los%20Angeles%2C%20CA%2090068';
+    var m=document.getElementById('maps'); m.href='https://maps.apple.com/?q=Old%20North%20Church&ll=34.1456,-118.3177'; m.removeAttribute('target');
   }
   function show(){ s.classList.add('ready'); }
   if(img.complete) show(); else { img.addEventListener('load',show); setTimeout(show,3000); }
