@@ -25,64 +25,68 @@ body{overflow:hidden}
 #stage{position:fixed;inset:0;display:flex;align-items:flex-start;justify-content:center}
 #scaler{width:1080px;height:1920px;flex:none;transform-origin:top center;opacity:0;transition:opacity .6s ease}
 #scaler.ready{opacity:1}
-.card{position:relative;width:1080px;height:1920px;overflow:hidden;background:#fff;color:#1a1a1a;font-family:'Cinzel',Georgia,serif;font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1}
 .card a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,.06)}
-.tap{border-bottom:1.5px solid #CFCFCF;padding-bottom:3px}
-.save{position:fixed;left:0;right:0;bottom:max(10px,env(safe-area-inset-bottom));text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:13px;letter-spacing:.18em;padding-left:.18em}
+.save{position:fixed;left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom));text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:13px;letter-spacing:.18em;padding-left:.18em}
 .save a{color:#8A8A8A;text-decoration:none}
 </style>
 </head>
 <body>
 <div id="stage"><div id="scaler">
-<main class="card">
+<main class="card" style="position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #FFFFFF; color: #1A1A1A; font-family: 'Cinzel', Georgia, serif; font-variant-numeric: lining-nums; font-feature-settings: 'lnum' 1, 'kern' 1, 'liga' 1; font-kerning: normal; text-rendering: geometricPrecision; -webkit-font-smoothing: antialiased">
+
+
 <div style="position: relative; width: 1080px; height: 1080px; overflow: hidden">
-<img src="photo.jpg" alt="Ardavan Ektefaie" style="display: block; width: 1080px; height: 1350px; object-fit: cover; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0,0,0,0.86) 56%, rgba(0,0,0,0.5) 64%, rgba(0,0,0,0.14) 72%, transparent 79%); mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0,0,0,0.86) 56%, rgba(0,0,0,0.5) 64%, rgba(0,0,0,0.14) 72%, transparent 79%)">
+<img src="photo.jpg" alt="Ardavan Ektefaie" style="display: block; width: 1080px; height: 1350px; object-fit: cover; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0,0,0,0.999) 51.40%, rgba(0,0,0,0.991) 52.80%, rgba(0,0,0,0.973) 54.20%, rgba(0,0,0,0.942) 55.60%, rgba(0,0,0,0.896) 57.00%, rgba(0,0,0,0.837) 58.40%, rgba(0,0,0,0.765) 59.80%, rgba(0,0,0,0.683) 61.20%, rgba(0,0,0,0.593) 62.60%, rgba(0,0,0,0.500) 64.00%, rgba(0,0,0,0.407) 65.40%, rgba(0,0,0,0.317) 66.80%, rgba(0,0,0,0.235) 68.20%, rgba(0,0,0,0.163) 69.60%, rgba(0,0,0,0.104) 71.00%, rgba(0,0,0,0.058) 72.40%, rgba(0,0,0,0.027) 73.80%, rgba(0,0,0,0.009) 75.20%, rgba(0,0,0,0.001) 76.60%, rgba(0,0,0,0.000) 78.00%); mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0,0,0,0.999) 51.40%, rgba(0,0,0,0.991) 52.80%, rgba(0,0,0,0.973) 54.20%, rgba(0,0,0,0.942) 55.60%, rgba(0,0,0,0.896) 57.00%, rgba(0,0,0,0.837) 58.40%, rgba(0,0,0,0.765) 59.80%, rgba(0,0,0,0.683) 61.20%, rgba(0,0,0,0.593) 62.60%, rgba(0,0,0,0.500) 64.00%, rgba(0,0,0,0.407) 65.40%, rgba(0,0,0,0.317) 66.80%, rgba(0,0,0,0.235) 68.20%, rgba(0,0,0,0.163) 69.60%, rgba(0,0,0,0.104) 71.00%, rgba(0,0,0,0.058) 72.40%, rgba(0,0,0,0.027) 73.80%, rgba(0,0,0,0.009) 75.20%, rgba(0,0,0,0.001) 76.60%, rgba(0,0,0,0.000) 78.00%)">
 </div>
 
 <div style="position: relative; margin-top: -120px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 70px">
 
-<p style="margin: 0; font-family: 'Pinyon Script', cursive; font-size: 76px; line-height: 1.1; color: #111111">In Loving Memory</p>
-<h1 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 70px; line-height: 1.1; letter-spacing: 0.1em; padding-left: 0.1em; color: #0D0D0D">ARDAVAN EKTEFAIE</h1>
-<p style="margin: 20px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 36px; color: #1E1E1E">January 1985 – October 2026</p>
+<p style="margin: 0; font-family: 'Pinyon Script', cursive; font-size: 76px; line-height: 1.1; color: #111111; opacity: 0.72; text-shadow: 0 2px 2px rgba(0,0,0,0.16), 0 6px 14px rgba(0,0,0,0.10)">In Loving Memory</p>
+<h1 style="margin: 14px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 76px; line-height: 1.1; letter-spacing: 0.1em; padding-left: 0.1em; color: #000000; text-shadow: 0 1px 0 rgba(255,255,255,0.7), 0 2px 3px rgba(0,0,0,0.22), 0 8px 20px rgba(0,0,0,0.12)">ARDAVAN EKTEFAIE</h1>
+<p style="margin: 20px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 36px; color: #1E1E1E; opacity: 0.72; text-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.06)">January 1985 – October 2026</p>
 
-<p id="fa" lang="fa" dir="rtl" style="margin: 57px 0 0; font-family: 'Markazi Text', serif; font-size: 46px; line-height: 1.35; color: #222222">روحش شاد و یادش گرامی</p>
+<p id="fa" lang="fa" dir="rtl" style="margin: 70px 0 0; font-family: 'Markazi Text', serif; font-size: 46px; line-height: 1.35; color: #222222; text-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.06)">روحش شاد و یادش گرامی</p>
 
-<p id="mem" style="margin: 54px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 500; letter-spacing: 0.35em; padding-left: 0.35em; color: #333333">MEMORIAL SERVICE</p>
-<a href="memorial-service.ics" aria-label="Add the memorial service on Saturday, November 21, 2026 at 12:00 PM to your calendar" style="margin-top: 16px"><span class="tap" style="font-size: 27px; letter-spacing: 0.05em; color: #333333">SATURDAY, NOVEMBER 21, 2026 · 12:00 PM</span></a>
-
-<a id="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Old%20North%20Church%2C%20Forest%20Lawn%20Hollywood%20Hills%2C%206300%20Forest%20Lawn%20Drive%2C%20Los%20Angeles%2C%20CA%2090068" aria-label="Get directions to Old North Church, Forest Lawn – Hollywood Hills, 6300 Forest Lawn Drive, Los Angeles, CA 90068" style="margin-top: 74px; display: flex; flex-direction: column; align-items: center">
-<span style="font-size: 40px; letter-spacing: 0.04em; color: #111111">Old North Church</span>
-<span style="margin-top: 8px; font-size: 30px; letter-spacing: 0.04em; color: #222222">Forest Lawn – Hollywood Hills</span>
-<span class="tap" style="margin-top: 12px; font-size: 25px; letter-spacing: 0.05em; color: #333333">6300 FOREST LAWN DRIVE · LOS ANGELES, CA 90068</span>
-</a>
+<p id="mem" style="margin: 66px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 500; letter-spacing: 0.35em; padding-left: 0.35em; color: #333333; text-shadow: 0 1px 2px rgba(0,0,0,0.14)">MEMORIAL SERVICE</p>
+<div id="cols" style="margin-top: 60px; display: flex; align-items: stretch; justify-content: center; font-family: 'Cormorant Garamond', Georgia, serif">
+<a href="memorial-service.ics" aria-label="Add the memorial service on Saturday, November 21, 2026 at 12:00 PM to your calendar" style="display: block; margin: 0; align-self: center; width: 330px; padding-right: 32px; box-sizing: border-box; text-align: right; font-weight: 600; font-size: 26px; line-height: 1.6; letter-spacing: 0.08em; color: #1A1A1A; text-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 3px 8px rgba(0,0,0,0.06)">SATURDAY<br>NOVEMBER 21, 2026<br>12:00 PM</a>
+<div aria-hidden="true" style="width: 1.5px; background: #555555"></div>
+<a id="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Old%20North%20Church%2C%20Forest%20Lawn%20Hollywood%20Hills%2C%206300%20Forest%20Lawn%20Drive%2C%20Los%20Angeles%2C%20CA%2090068" target="_blank" rel="noopener" aria-label="Directions to Old North Church, Forest Lawn – Hollywood Hills" style="display: block; margin: 0; width: 560px; padding-left: 32px; box-sizing: border-box; text-align: left; font-weight: 600; font-size: 26px; line-height: 1.6; letter-spacing: 0.06em; color: #1A1A1A; text-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 3px 8px rgba(0,0,0,0.06)">OLD NORTH CHURCH<br>FOREST LAWN – HOLLYWOOD HILLS<br>6300 FOREST LAWN DRIVE<br>LOS ANGELES, CA 90068</a>
+</div>
 
 </div>
 
 <div style="position: absolute; left: 0; right: 0; bottom: 70px; display: flex; flex-direction: column; align-items: center; text-align: center">
-<p style="margin: 0; font-size: 17px; letter-spacing: 0.4em; padding-left: 0.4em; color: #333333">FOREVER IN OUR HEARTS</p>
+<p style="margin: 0; font-size: 17px; letter-spacing: 0.4em; padding-left: 0.4em; color: #333333; text-shadow: 0 1px 1px rgba(0,0,0,0.12)">FOREVER IN OUR HEARTS</p>
 <svg aria-hidden="true" width="240" height="14" viewBox="0 0 420 22" style="margin-top: 8px" fill="none" stroke="#555555" stroke-width="1.6">
 <line x1="0" y1="11" x2="176" y2="11"></line>
 <path d="M210 11 C204 4 192 4 192 11 C192 18 204 18 210 11 C216 4 228 4 228 11 C228 18 216 18 210 11 Z" stroke-width="1.6"></path>
 <line x1="244" y1="11" x2="420" y2="11"></line>
 </svg>
-<p lang="fa" dir="rtl" style="margin: 5px 0 0; font-family: 'Markazi Text', serif; font-size: 28px; line-height: 1.35; color: #222222">همیشه در قلب ما <svg role="img" aria-label="heart" width="20" height="20" viewBox="0 0 24 24" style="display: inline-block; vertical-align: -3px; margin-right: 5px"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.2 1.8-2 3.3-3.2 5.4-3.2 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21z" fill="#C8102E"></path></svg></p>
+<p lang="fa" dir="rtl" style="margin: 5px 0 0; font-family: 'Markazi Text', serif; font-size: 28px; line-height: 1.35; color: #222222; text-shadow: 0 1px 1px rgba(0,0,0,0.12)">همیشه در قلب ما <svg role="img" aria-label="heart" width="20" height="20" viewBox="0 0 24 24" style="display: inline-block; vertical-align: -3px; margin-right: 5px"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.2 1.8-2 3.3-3.2 5.4-3.2 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21z" fill="#C8102E"></path></svg></p>
 </div>
 
-<div aria-hidden="true" style="position: absolute; top: 36px; left: 36px; right: 36px; bottom: 36px; border: 2px solid #111111; pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 28px; left: 28px; right: 28px; bottom: 28px; border: 2px solid; border-color: #000000 #383838 #383838 #000000; box-shadow: 0 0 0 1px rgba(255,255,255,0.7), -1px -1px 2px rgba(0,0,0,0.25); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 30px; left: 30px; right: 30px; bottom: 30px; border: 2px solid; border-color: #1A1A1A; pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 32px; left: 32px; right: 32px; bottom: 32px; border: 2px solid; border-color: #383838 #000000 #000000 #383838; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.55), inset 1px 1px 3px rgba(0,0,0,0.25); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 46px; left: 46px; right: 46px; bottom: 46px; border: 1px solid; border-color: #000000 #363636 #363636 #000000; box-shadow: 0 0 0 1px rgba(255,255,255,0.6), -1px -1px 1px rgba(0,0,0,0.2); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; top: 47px; left: 47px; right: 47px; bottom: 47px; border: 1px solid; border-color: #363636 #000000 #000000 #363636; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5); pointer-events: none"></div>
+
 </main>
 </div></div>
 <div class="save"><a href="invitation.jpg" download="Ardavan-Ektefaie-Memorial-Invitation.jpg">SAVE INVITATION</a></div>
 <script>
 (function(){
-  var s=document.getElementById('scaler');
-  var card=s.querySelector('.card');
+  var s=document.getElementById('scaler'), card=s.querySelector('.card');
   function fit(){
-    var save=28, w=window.innerWidth, h=window.innerHeight-save;
-    var H=Math.max(1920, Math.min(2340, 1080*h/w));
+    var save=56, w=window.innerWidth, h=window.innerHeight-save;
+    var H=Math.max(1920, Math.min(2120, 1080*h/w));
     card.style.height=H+'px'; s.style.height=H+'px';
-    var k=Math.min(w/1080,h/H);
-    var x=H-1920; document.getElementById('fa').style.marginTop=(57+x*0.17)+'px'; document.getElementById('mem').style.marginTop=(54+x*0.17)+'px'; document.getElementById('maps').style.marginTop=(74+x*0.33)+'px';
-    s.style.transform='scale('+k+')';
+    var x=H-1920;
+    document.getElementById('fa').style.marginTop=(70+x*0.27)+'px';
+    document.getElementById('mem').style.marginTop=(66+x*0.27)+'px';
+    document.getElementById('cols').style.marginTop=(60+x*0.3)+'px';
+    s.style.transform='scale('+Math.min(w/1080,h/H)+')';
   }
   fit(); window.addEventListener('resize',fit);
   if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
