@@ -6,3 +6,10 @@
   for = "/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+# Old Netlify address now sends everyone to the current site (Cloudflare ignores this file)
+[[redirects]]
+  from = "/*"
+  to = "https://ardavan-ektefaie.pages.dev/:splat"
+  status = 301
+  force = true
